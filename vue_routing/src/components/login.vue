@@ -24,13 +24,13 @@
             <form class="form-signin">
               <div class="form-label-group">
                 <label for="inputEmail">Email address</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus v-model="username">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus v-model="userdetails.username">
                 
               </div>
                 <br>
               <div class="form-label-group">
                 <label for="inputPassword">Password</label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password"  v-model="password" required>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password"  v-model="userdetails.password"   required>
                 
               </div>
 
@@ -52,13 +52,16 @@
 export default {
     data(){
         return{
+          userdetails:{
               username:'',
               password:''
+          }
+            
         }
     },
     methods:{
         submit(){
-            alert('login successfull');
+            this.$router.push("/user/"+this.userdetails.username);
         }
     }
 
