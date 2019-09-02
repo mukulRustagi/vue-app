@@ -14,8 +14,8 @@ export default {
   components:{
     appHeader:Header
   },
-  name: 'app',
-  mode:'history'
+  name: 'app'
+  
 }
 </script>
 
