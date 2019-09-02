@@ -2,7 +2,7 @@
   <div>
       <p>User Name:</p>
       <p> {{username}}</p>
-     
+    <button @click="navigateToHome" class="btn btn-primary"> go to home</button>
   </div>
 </template>
 
@@ -23,6 +23,11 @@ export default {
     created(){
         if(this.$route.params.userdetail==':userdetail'){
             this.username='';
+        }
+    },
+    methods:{
+        navigateToHome(){
+            this.$router.push('/');
         }
     }
 

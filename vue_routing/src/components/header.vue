@@ -13,6 +13,8 @@
     <router-link to="/user/rustagi" tag="li" active-class="active" class="nav-link"><a>user rustagi</a></router-link>
  -->
 <router-link to="/user/:userdetail" tag="li" active-class="active" class="nav-link"><a>user</a></router-link>
+<router-link to="/products" tag="li" active-class="active" class="nav-link"><a>Products</a></router-link>
+
     
 
 </ul>
